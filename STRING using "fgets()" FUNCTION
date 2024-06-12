@@ -1,0 +1,16 @@
+//STRING using "fgets()" FUNCTION 
+
+#include <stdio.h>
+
+int main() {
+    char str[50];
+    printf("Enter the string");
+    fgets(str,50,stdin);
+    printf("%s",str);
+
+    return 0;
+}
+
+output:
+Enter the string  java language
+java language
