@@ -1,0 +1,21 @@
+//program without using "strlen()" function
+
+#include <stdio.h>
+
+int main() {
+    char str[50];
+    printf("Enter the string");
+    gets(str);
+    int c=0,i;
+    for(i=0;str[i]!='\0';i++)
+    {
+        c++;
+    }
+    printf("%d",c);
+
+    return 0;
+}
+
+OUTPUT:
+Enter the string poojapooja
+5  
