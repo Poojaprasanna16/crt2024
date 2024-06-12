@@ -1,5 +1,6 @@
 //Write a program to find whether the two arrays are the same or not. Two arrays are said to be the same if the elements of both the arrays is the same and the size of arrays is the same.
 
+
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
@@ -18,7 +19,7 @@ int main() {
     {
         scanf("%d",&b[i]);
     }
-    if(n1!=n2)
+    if(n1!=n2)    //checking with array elements SIZE
     {
         printf("Not Same");
         
@@ -27,7 +28,7 @@ int main() {
     {
         for(i=0;i<n1;i++)
         {
-            if(a[i]!=b[i])
+            if(a[i]!=b[i])    //Checking with ELEMENTS
             {
                 printf("Not Same");
                 break;
