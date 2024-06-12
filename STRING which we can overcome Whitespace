@@ -1,0 +1,15 @@
+//STRING which we can overcome Whitespace
+#include <stdio.h>
+
+int main() {
+    char str[50];
+    printf("Enter the string");
+    scanf("%[^\n]s",str);
+    printf("%s",str);
+
+    return 0;
+}
+
+output:
+Enter the string java languagejava language
+java language
