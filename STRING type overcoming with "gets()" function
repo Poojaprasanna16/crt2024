@@ -1,0 +1,24 @@
+//STRING type overcoming with "gets()" function
+
+#include <stdio.h>
+
+int main() {
+    char str[50];
+    printf("Enter the string");
+    gets(str);
+    printf("%s",str);
+
+    return 0;
+}
+
+OUTPUT:
+7 |     gets(str);
+      |     ^~~~
+      |     fgets
+/rbin/ld: /tmp/ccQco2op.o: in function `main':
+UPOHzab4qX.c:(.text+0x24): warning: the `gets' function is dangerous and should not be used.
+/tmp/UPOHzab4qX.o
+Enter the string JAVA LanguageJAVA Language
+JAVA Language
+
+=== Code Execution Successful ===
