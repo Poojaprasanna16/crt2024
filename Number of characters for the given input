@@ -1,0 +1,28 @@
+//priogram on number of characters for the given input
+
+#include <stdio.h>
+#include<string.h>
+int main() {
+          char s[100],r;
+          int i,j;
+         scanf("%[^\n]s",s);
+         int n=strlen(s);
+         for(i=0;i<n;i=i+2)
+         {
+             r=s[i];
+             j=s[i+1];
+             j=j-48;
+             while(j>0)
+             {
+                 printf("%c",r);
+                 j--;
+             }
+         }
+
+return 0;
+}
+
+Input:
+k4p6
+  output:
+kkkkpppppp
