@@ -1,0 +1,26 @@
+//Profram without using strcat() function
+
+#include <stdio.h>
+int main() {
+          char s1[50],s2[50],i,j;
+          char r[50];
+          scanf("%s",s1);
+          scanf("%s",s2);
+          for(i=0;s1[i]!='\0';i++)
+          {
+              r[i]=s1[i];
+          }
+          for(j=i;s2[j-i]!='\0';j++)
+          {
+              r[j]=s2[j-1];
+              }
+              r[j]='\0';
+          printf("%s%s",s1,s2);
+          return 0;
+}
+Input:
+pooja
+INput:
+prasanna
+OUTPUT:
+poojaprasanna
